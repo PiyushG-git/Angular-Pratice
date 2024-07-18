@@ -1,0 +1,12 @@
+<p>contact-child works!</p>
+<label for="">Name</label>
+<input type="text" [(ngModel)]="parentdetail.name" name="name">
+<label for="">contact</label>
+<input type="text" [(ngModel)]="parentdetail.contact" name="contact">
+
+
+<label>
+    Service Recive
+</label>
+<input type="text" [(ngModel)]="contact_childdata" name="contact_childdata"> 
+<button (click)="onrecive()">sent</button>

@@ -1,0 +1,59 @@
+<form>
+    <h1>
+        Current Address
+    </h1>
+    <br>
+    <table>
+        <tr>
+            <td>
+                <label>Flat number :-</label>
+            </td>
+            <td><input type="text"[(ngModel)]="Current_flatno" name="Current_flatno"></td>
+        </tr>
+        <tr>
+            <td>
+                <label>Building Name :- </label>
+            </td>
+            <td><input type="text" [(ngModel)]="Current_Building" name="Current_Building"></td>
+        </tr>
+        <tr>
+            <td>
+                <label>Landmark :-</label>
+            </td>
+            <td><input type="text" [(ngModel)]="Current_Landmark" name="Current_Landmark"></td>
+        </tr>
+        <tr>
+            <td>
+                <label>City :-</label>
+            </td>
+            <td><input type="text" [(ngModel)]="Current_City" name="Current_City"></td>
+        </tr>
+        <tr>
+            <td>
+                <label>Pincode :-</label>
+            </td>
+            <td><input type="text" [(ngModel)]="Current_Pincode" name="Current_Pincode"></td>
+        </tr>
+        <tr>
+            <td>
+                <label>State</label>
+            </td>
+            <td><input type="text" [(ngModel)]="Current_State" name="Current_State"></td>
+        </tr>
+
+    </table>
+    <input type="checkbox" id="Current_address" name="Current_address" (click)="onSent($event)">
+    <label for="Current_address"> Same as Permanent Address</label><br>
+</form>
+<hr>
+<!-- <app-home-child [Permanent_flatno]="Current_flatno_sent"
+[Permanent_Building]="Current_Building_sent"
+[Permanent_Landmark]="Current_Landmark_sent"
+[Permanent_Pincode]="Current_Pincode_sent"
+[Permanent_City]="Current_City_sent"
+[Permanent_State]="Current_State_sent"></app-home-child> -->
+<app-home-child (SameasCurrentAddress)="onRecieveData">
+
+</app-home-child>
+[SameasPermanentaddress]="CurrentAddress"
+<button (click)="onfetch()">Fetch</button>

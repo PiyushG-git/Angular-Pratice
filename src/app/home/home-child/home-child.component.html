@@ -1,0 +1,50 @@
+<!-- <p>home-child works!</p> -->
+<form>
+    <h1>
+        Permanent Address
+    </h1>
+    <br>
+    <table>
+        <tr>
+            <td>
+                <label>Flat number :-</label>
+            </td>
+            <td><input type="text"[(ngModel)]="Permanent_flatno" name="Permanent_flatno"></td>
+        </tr>
+        <tr>
+            <td>
+                <label>Building Name :- </label>
+            </td>
+            <td><input type="text" [(ngModel)]="Permanent_Building" name="Permanent_Building"></td>
+        </tr>
+        <tr>
+            <td>
+                <label>Landmark :-</label>
+            </td>
+            <td><input type="text" [(ngModel)]="Permanent_Landmark" name="Permanent_Landmark"></td>
+        </tr>
+        <tr>
+            <td>
+                <label>City :-</label>
+            </td>
+            <td><input type="text" [(ngModel)]="Permanent_City" name="Permanent_City"></td>
+        </tr>
+        <tr>
+            <td>
+                <label>Pincode :-</label>
+            </td>
+            <td><input type="text" [(ngModel)]="Permanent_Pincode" name="Permanent_Pincode"></td>
+        </tr>
+        <tr>
+            <td>
+                <label>State</label>
+            </td>
+            <td><input type="text" [(ngModel)]="Permanent_State" name="Permanent_State"></td>
+        </tr>
+
+    </table>
+
+    <input type="checkbox" id="Permanent_address" name="Permanent_address" (click)="onEnter($event)">
+  <label for="Permanent"> Same as Current Address</label><br> 
+  <input type="checkbox" (click)="onEnter($event)">
+</form>

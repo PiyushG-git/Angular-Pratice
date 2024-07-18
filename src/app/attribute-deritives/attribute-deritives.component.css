@@ -1,0 +1,53 @@
+.login{
+    position: absolute; left: 10cm; top: 5cm; 
+    border: 2px gray;
+    background-color: gray;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+.home{
+    position: absolute; left: 5cm; top: 1cm; 
+    height: 10cm;
+    width: 15cm;
+    border: 2px rgb(0, 162, 255);
+    background-color: rgb(0, 162, 255);
+    border-radius: 5px;
+    margin: 2px;
+    padding: 10px;
+}
+.Active{
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+/* .dot {
+    color : user =='Active' ? 'green' : 'Red';
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  } */
+  .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    right: auto;
+    position: relative;
+    left: 12cm;
+    bottom: 1cm;
+
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}

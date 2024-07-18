@@ -1,0 +1,23 @@
+<!-- <p>login works!</p>
+<a href="https://www.google.co.in/">link</a>
+<p style="text-align: center;">hii</p> -->
+<form>
+    <label>USERNAME</label>
+    <input type="text" [(ngModel)]="username" name="username"><br>
+    <label>PASSWORD</label>
+<input type="text"  [(ngModel)]="password" name="password"><br>
+<input type="button" (click)="onLogin()" value="click">
+</form>
+<label>
+    child name
+</label>
+<input type="text" [(ngModel)]="childData" name="childData">
+<app-login-child [formname]="username" [formpassword]="password" (childData)="onRecieveData($event)"></app-login-child>
+                                                            
+<button routerLink="/home">home</button>
+<!-- <button routerLink='/Contact'>Contact</button> -->
+ <label>Name</label>
+ <input type="text">
+ <br>
+ 
+ <button (click)="onContact()">Contact</button>

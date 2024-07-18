@@ -1,0 +1,35 @@
+<!-- <p>attribute-deritives works!</p> -->
+<div class="home" *ngIf="HomePage">
+    <h1>
+        Netflix
+    </h1>
+        <!-- <p [ngClass] ="{'color' : user =='Active' ? 'green' : 'Red'}" class="dot">Active</p> -->
+        <!-- <p [ngClass]="Active"></p> -->
+        <div [ngClass]="{'green': user === 'Active', 'red': user !== 'Active'}" class="dot"></div>
+        
+       <br> <button (click)="onsignin()" style="   position: relative;
+       left: 13cm;
+       bottom: 2cm;">Sign In</button>
+       <br> <button (click)="Logout()" style="   position: relative;
+       left: 13cm;
+       bottom: 1.7cm;">Log Out</button>
+       <br>
+       <video width="320" height="240" controls>
+        <source src="C:\Users\Dell Premium\Desktop\sigma web course\html\vedio.mp4.MOV">
+      </video>
+
+</div>
+
+
+<div class="login" *ngIf="LoginPage">
+<label>User Name : </label>
+<input type="text" [(ngModel)]="UserNameEnter" name="UserNameEnter"><br>
+<label>Password : </label>
+<input type="password" [(ngModel)]="PasswordEnter" name="PasswordEnter"><br>
+<button (click)="onLogin()" style="margin: auto;">Login</button>
+</div>
+
+
+<!-- 
+<button (click)="onLogin()" style="margin: auto;">Login</button>
+<p [ngStyle] ="{'color' : user =='Active' ? 'green' : 'Red'}">Active</p> -->

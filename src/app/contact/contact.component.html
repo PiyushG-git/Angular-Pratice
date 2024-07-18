@@ -1,0 +1,25 @@
+<!-- <p>contact works!</p> -->
+<label for="">Name</label>
+<input type="text" [(ngModel)]="name_enter" name="name_enter">
+<label for="">contact</label>
+<input type="text" [(ngModel)]="contact_enter" name="contact_enter">
+<button (click)="onsent($event)">
+click
+</button>
+
+<hr>
+<label>
+    Service Sent 1
+</label>
+<input type="text" [(ngModel)]="contactdata" name="contactdata"> 
+<label>
+    Service Sent 2
+</label>
+<input type="text" [(ngModel)]="contactdata2" name="contactdata2"> 
+<button (click)="onsave()">sent</button>
+<app-contact-child [parentdetail]="detail">
+
+</app-contact-child>
+
+<button routerLink='/home'>home</button>
+
